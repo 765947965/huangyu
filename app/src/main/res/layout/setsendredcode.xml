@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/removelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:onClick="Onchangeclick"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/sendredleftjt" />
+
+        <TextView
+            android:id="@+id/setredcode_banck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:clickable="true"
+            android:onClick="Onchangeclick"
+            android:text="@string/settingcontent1_recharge_command_btn2"
+            android:textColor="#ED2E14"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/setredcode_romyself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:onClick="Onchangeclick"
+            android:text="@string/selfsetcode"
+            android:textColor="#ED2E14"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltemp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/radianwriteb_1" >
+
+            <EditText
+                android:id="@+id/codeedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:maxLength="10"
+                android:onClick="Onchangeclick"
+                android:singleLine="true"
+                android:textColor="#BD1816"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/codeedit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/reltemp"
+            android:background="@drawable/bttwriteaction"
+            android:clickable="true"
+            android:onClick="Onchangeclick"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/ensure"
+            android:textColor="#BD1816"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/setmyselfcode"
+        android:textColor="#FF6506"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imagebt_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_wx_xml" />
+
+    <ImageView
+        android:id="@+id/imagebt_wb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_wb_xml"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imagebt_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_qq_xml" />
+
+    <ImageView
+        android:id="@+id/imagebt_pyq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_pyq_xml" />
+
+    <ImageView
+        android:id="@+id/imagebt_qqkj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_qqkj_xml" />
+
+    <ImageView
+        android:id="@+id/imagebt_dx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Onchangeclick"
+        android:src="@drawable/redcode_dx_xml" />
+
+</LinearLayout>

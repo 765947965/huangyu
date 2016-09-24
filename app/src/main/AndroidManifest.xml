@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.aisin.sipphone.tianyu"
+    android:versionCode="1001"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 百度SDK权限 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 百度SDK权限 -->
+    <application
+        android:name="org.aisin.sipphone.AisinApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/startbanckground" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="yUisD3mmLrOxTSlwfXBUPR54" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="org.aisin.sipphone.LodingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="tianyu"
+                    android:scheme="tianyuredstart" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.AisinActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetAboutaisin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.CallOutSet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetKeyback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowSetKeyback"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetInviteriends"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetWallet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.Switch_on"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetCnumber_account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetRetrievePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.MobileCardRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.AccountQueryActivity"
+            android:screenOrientation="portrait" />
+        <!-- android:process=":aisin.webview" -->
+        <activity
+            android:name="org.aisin.sipphone.setts.CheckWebView"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowTextView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.aipay.AlixDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone_call_records.Call_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone_call_records.MoreCall_records"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.mai_list.Detailed_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.TraditionalDialBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.TraditionalDialBackActivity_v2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.RedDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.RedDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.RedListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.RedDlTextShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.Regist4V2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.Regist4V2_CheckCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.Regist4V2_ChangePwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.R_Loding4v2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetRetrievePassword4V2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetRetrievePassword4V2_code"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SelfPersonalData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SPD_changeName"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SPD_qianming"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.PersonalCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ProvinceListview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.CityListview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowImage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.BootPage"
+            android:process=":bootpage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.StartPager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.mai_list.AddAisinFriend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dtr.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.MyQrcode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.MyRedEnvelope"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.PersonalRedEnvelope"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.PersonalRedEnvelopeConfig"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.PersonRedSendSucess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetRedCodeBefore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.HelpNow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetSendRedCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.GroupRedEnvelopeConfig"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowGetRedInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.CkeckOutRedErroreInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.TOpenRed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.RedDetailsActivity_Send"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowGetRedInfoShare"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SharedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.setts.RedDialogNums"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowRedRecevedInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowReduser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShowRedUserTextView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.nearbystores.DetailsPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.nearbystores.DisplayInMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.nearbystores.RoutePlanDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.DwonNewApps"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="org.aisin.sipphone.setts.Shared_AddRedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.Set4Keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.SetKeyboardMusic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.aipay.MyPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.TutorialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.TutorialShowInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.FirstActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="org.aisin.sipphone.NetChangeReceiver" >
+            <intent-filter android:priority="10000000" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.aisin.sipphone.DwonNewAppService" />
+        <service android:name="org.aisin.sipphone.CkeckUpServer" />
+        <service android:name="org.aisin.sipphone.DolowniamgeServer" />
+        <!-- 显示悬浮框 -->
+        <service android:name="org.aisin.sipphone.CallingService" >
+            <intent-filter>
+                <action android:name="org.aisin.sipphone.callingservice" />
+            </intent-filter>
+        </service>
+        <!-- 吴俊 -->
+        <activity
+            android:name="org.aisin.sipphone.find.FindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.find.FindSubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.directcall.AisinOutCallActivity"
+            android:label="@string/title_activity_out_call"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.directcall.ContactsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <service android:name="org.linphone.gcm.GCMService" />
+        <service android:name="org.aisin.sipphone.directcall.AisinService" />
+
+        <receiver
+            android:name="org.linphone.gcm.GCMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="org.linphone" />
+                <!-- ？？ -->
+            </intent-filter>
+        </receiver>
+
+        <!-- 吴俊 -->
+        <!-- QQ分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105327103" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.dial.LoadVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/loadvideotheme" />
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.tianyu.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        <activity
+            android:name="org.aisin.sipphone.tianyu.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+    </application>
+
+</manifest>

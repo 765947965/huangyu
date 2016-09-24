@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/removelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/psll_bar_back"
+            android:layout_width="76dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/aixinfriendtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maillisttitlebanck_txl_pres"
+                android:padding="5dp"
+                android:text="@string/aixinfriend"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/aixin_not_friendtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maillisttitlebanck_axhy_dis"
+                android:padding="5dp"
+                android:text="@string/no_aixinfriend"
+                android:textColor="#1160FD"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="49.5dp"
+            android:background="#BDBEBD" >
+        </View>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BDBDC3"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <org.aisin.sipphone.mai_list.SearchText
+            android:id="@+id/searchtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/mai_listactivity_search_banck"
+            android:gravity="center_vertical|left"
+            android:hint="@string/mail_listactivity_sslxr"
+            android:paddingLeft="30dp"
+            android:paddingRight="50dp"
+            android:singleLine="true"
+            android:textSize="15sp" >
+        </org.aisin.sipphone.mai_list.SearchText>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/common_icon_searchbox_magnifier_2" />
+
+        <ImageView
+            android:id="@+id/cleartext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/popu_panel_close"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/addfriendsline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#BDBEBD" >
+            </View>
+
+            <TextView
+                android:id="@+id/nextbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bt_reg_drawable"
+                android:enabled="false"
+                android:text="@string/nextbt"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <org.aisin.sipphone.myview.HorizontalListView
+                android:id="@+id/hlistview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/nextbt" >
+            </org.aisin.sipphone.myview.HorizontalListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/addfriendsline" >
+
+            <ListView
+                android:id="@+id/aixinfriendlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:listSelector="#00000000" >
+            </ListView>
+
+            <org.aisin.sipphone.mai_list.MailList_abcList
+                android:id="@+id/ppre_abclist"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp" >
+            </org.aisin.sipphone.mai_list.MailList_abcList>
+
+            <TextView
+                android:id="@+id/mail_list_abcT"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mail_list_abct_image"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

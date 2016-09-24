@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="startbanckground" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowBackground">@drawable/launcher_splashscreen</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <!-- 打开ACTIVITY时 进来的AcTIvity动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <!-- 打开ACTIVITY时 出去的AcTIvity动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <!-- 退出ACTIVITY时 背后AcTIvity进来的动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+        <!-- 退出ACTIVITY时 退出的动画 -->
+    </style>
+
+</resources>

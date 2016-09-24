@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/mail_listactivity_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/loading"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/maillistlainearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF" >
+
+            <ImageView
+                android:id="@+id/mail_bar_back"
+                android:layout_width="76dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/maillist_txlbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/maillisttitlebanck_txl_pres"
+                    android:padding="5dp"
+                    android:text="@string/mytxl"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/maillist_hybt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/maillisttitlebanck_axhy_dis"
+                    android:padding="5dp"
+                    android:text="@string/myhaoyou"
+                    android:textColor="#1160FD"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="49.5dp"
+                android:background="#BDBEBD" >
+            </View>
+
+            <ImageView
+                android:id="@+id/mail_list_add"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/addmail_select" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/mlla_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BDBDC3"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <org.aisin.sipphone.mai_list.SearchText
+                    android:id="@+id/searchtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/mai_listactivity_search_banck"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/mail_listactivity_sslxr"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="50dp"
+                    android:singleLine="true"
+                    android:textSize="15sp" >
+                </org.aisin.sipphone.mai_list.SearchText>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/common_icon_searchbox_magnifier_2" />
+
+                <ImageView
+                    android:id="@+id/cleartext"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/popu_panel_close"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <org.aisin.sipphone.setts.DynamicListView
+                android:id="@+id/mail_listactivity_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mlla_rl"
+                android:divider="#e8e8e8"
+                android:dividerHeight="0.5dp"
+                android:listSelector="#00000000" >
+            </org.aisin.sipphone.setts.DynamicListView>
+
+            <ListView
+                android:id="@+id/mail_listactivity_list_shearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mlla_rl"
+                android:layout_marginLeft="20dp"
+                android:divider="#e8e8e8"
+                android:dividerHeight="0.5dp"
+                android:listSelector="#00000000"
+                android:visibility="gone" >
+            </ListView>
+
+            <org.aisin.sipphone.mai_list.MailList_abcList
+                android:id="@+id/mlist_abclist"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="45dp" >
+            </org.aisin.sipphone.mai_list.MailList_abcList>
+
+            <TextView
+                android:id="@+id/mail_list_abcT"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mail_list_abct_image"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

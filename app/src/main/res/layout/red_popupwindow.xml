@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bbbck"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ppwindow_redall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/menuitem_myred"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/poptell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-8dp"
+        android:text="4000711126"
+        android:textColor="#ffcc00"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/popred_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#BDBEBD" >
+    </View>
+
+    <TextView
+        android:id="@+id/ppwindow_rednot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/menured_notrext"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/popqq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-8dp"
+        android:text="3419622947"
+        android:textColor="#ffcc00"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#BDBEBD" >
+    </View>
+
+    <TextView
+        android:id="@+id/sendoutred_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/sendoutred"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

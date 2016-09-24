@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/org.aisin.sipphone.tianyu"
+    android:id="@+id/video_heard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/load_framebottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+       
+         >
+
+        <ImageView
+            android:id="@+id/img_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView 
+             android:id="@+id/tv_video_load_failed"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:gravity="center" 
+             android:visibility="gone"
+             />
+        <org.aisin.sipphone.dial.NumberCircleProgressBar
+            android:id="@+id/numbercircleprogress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            custom:max="100"
+            custom:progress="0"
+            custom:progress_circle_radius="30dp"
+            custom:progress_fill_mode="rotate"
+            custom:progress_reached_color="#FFFFFF"
+            custom:progress_text_color="@android:color/black"
+            custom:progress_text_size="15sp"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_color="#CCCCCC" />
+    </FrameLayout>
+   <View  
+              android:id="@+id/load_frametopbank"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.8"
+              
+     />
+    <FrameLayout
+        android:id="@+id/load_frametop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2" 
+       android:background="@android:color/black"
+        android:visibility="gone"
+       
+        >
+
+        <VideoView
+            android:id="@+id/asinvideoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:layout_gravity="center"
+            
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        
+        <ImageView
+            android:id="@+id/img_video_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            
+             android:id="@+id/load_real"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom" >
+
+            <TextView
+                android:id="@+id/play_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/player_progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/play_end_time"
+                android:layout_toRightOf="@+id/play_time" />
+
+            <TextView
+                android:id="@+id/play_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="20:12:33"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/img_loadback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:scaleType="fitXY" />
+       
+    </FrameLayout>
+    
+    <FrameLayout  
+              android:id="@+id/load_framebank"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="3.3"
+               
+               android:visibility="gone" >
+        
+  
+    </FrameLayout>
+        
+               
+               
+    
+</LinearLayout>

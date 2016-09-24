@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ru_hbkl">红包口令：</string>
+    <string name="ru_hbkljs">是一串字符，在红包口令页面输入对应的口令，就能快速参与到环宇红包活动中。</string>
+    <string name="ru_tocreatkltitle">如何产生红包口令：</string>
+    <string name="ru_tocreatkltext">在环宇红包中发出个人红包(给非环宇好友手机号码)、或群红包，包好红包并选择生成口令，系统将自动生一个红包口令；你可以自己设置口令；你可以将口令通过微信、微博、QQ、短信等方式分享给好友，也可以直接把红包口令告诉你的朋友。</string>
+    <string name="ru_tousercodetitle">如何使用红包口令：</string>
+    <string name="ru_tousercodetext">获知红包口令后，需要进入环宇“我”的“红包”页面，输入相应的口令，就能快速参与到对应的红包摇一摇活动中去。目前支持红包口令的活动：个人红包(给非环宇好友手机号码)、群红包。</string>
+    <string name="ru_tousercodegztitle">红包口令规则：</string>
+    <string name="ru_tousercodegztext_1">1、只有注册、登陆到环宇软件中的用户才可以通过口令方式参与红包活动。</string>
+    <string name="ru_tousercodegztext_2">2、口令红包通过摇一摇方式领取，只要红包还没有被人抢完，继续摇一定可以抢到。</string>
+    <string name="ru_grusertitle">个人红包玩法介绍：</string>
+    <string name="ru_grusertext">红包里包的是你的环宇账户中的余额(当前为计时话费，后续敬请期待包月天数、3G/4G流量、特权券等)，每一份是固定面额，对方领取到红包后余额自动转入对方的环宇账户余额。</string>
+    <string name="ru_gruserfhbtitle">如何发红包：</string>
+    <string name="ru_gruserfhbtext_1">1、选择要发的环宇好友，可以选一个或多个好友；</string>
+    <string name="ru_gruserfhbtext_2">2、填写一个你的姓名，这样你的好友才知道是你发的红包哦。默认为"我"-"个人资料"中设置的姓名；</string>
+    <string name="ru_gruserfhbtext_3">3、输入红包的总金额、选择红包类型(当前为话费红包，后续会有流量红包、特权券红包)、拼手气红包或者普通均分红包；</string>
+    <string name="ru_gruserfhbtext_4">4、说几句祝福语；</string>
+    <string name="ru_gruserfhbtext_5">5、发送成功。</string>
+    <string name="ru_gruserlqhbtitle">如何领取红包：</string>
+    <string name="ru_gruserlqhbtext">红包发出后，环宇好友在打开环宇软件时，会通知你的朋友有未拆红包。</string>
+    <string name="ru_gruserthhbtitle">红包退回说明：</string>
+    <string name="ru_gruserthhbtext">1、红包有效期是发红包的第二天晚上24:00，如果有效期内未被领取，红包对应的金额将退回至发送者的环宇账户余额。</string>
+    <string name="ru_qunusertitle">群红包玩法介绍：</string>
+    <string name="ru_qunusertxt">红包里包的是你的环宇账户中的余额(当前为计时话费，后续敬请期待免费通话天数、3G/4G流量、特权券等)，发红包者包红包时需指定红包总金额和红包个数数量，红包类型是拼手气红包则系统随机确定每份红包的金额，红包类型是普通红包则系统将按照总金额和总红包个数确定每份红包的金额。</string>
+    <string name="ru_qunuserfhbtext_1">1、填写一个你的姓名，这样你的好友才知道是你发的红包哦。默认为"我"-"个人资料"中设置的姓名；</string>
+    <string name="ru_qunuserfhbtext_2">2、输入红包的总金额、选择红包类型(当前为话费红包，后续会有流量红包、特权券红包)、拼手气红包或者普通均分红包；</string>
+    <string name="ru_qunuserfhbtext_3">3、输入群红包要分为几份；</string>
+    <string name="ru_qunuserfhbtext_4">4、说几句祝福语；</string>
+    <string name="ru_qunuserfhbtext_5">5、生成口令；可以自己设置个性化口令；</string>
+    <string name="ru_qunuserfhbtext_6">6、将口令和红包信息分享到拟发送红包的各社交平台，也可以通过短信发送红包。</string>
+    <string name="ru_qunuserlqhbtext">发红包者将红包分享到社交平台或通过其他方式分享后，其他人可点击红包链接进入环宇红包摇一摇方式领取，或通过获取红包口令，并进入环宇通过输入正确红包口令来摇一摇领取，\n摇中后会获得相应金额的红包，红包金额会打入领取者的环宇账户余额。领取者先到先得，领完为止。</string>
+    <string name="ru_qunusertbtstitle">特别提示：</string>
+    <string name="ru_qunusertbtstext">您将红包分享到社交平台或通过其他方式分享给朋友后，您的朋友也可以将红包信息（包括但不限于红包口令、含有红包口令的文字信息）再分享出去，领取到您红包的人中可能有您不认识的人。有了红包口令就有了获得红包的机会，请谨慎保管红包口令。</string>
+    <string name="ru_qunuserthhbtext">1、红包有效期是发红包者发送红包时刻的第二天晚上24:00前有效，如果有效期内未被领取，红包对应的金额将退回至发送者的环宇账户余额。</string>
+    <string name="ru_zensongjiliredtitle">环宇赠送、激励红包介绍：</string>
+    <string name="ru_zensongjiliredtext">环宇将定期的给予用户发送红包。红包内容当前为计时话费红包，敬请期待后续免费通话天数红包、3G/4G流量红包、特权券红包等。</string>
+    <string name="ru_zensongdqedtitle">当前环宇定期发送给用户的红包类型：</string>
+    <string name="ru_zensongdqedtext_1">1、每日登陆红包；用户每天第一次打开环宇软件，环宇将赠送“每日登陆红包”，用户在拆红包提示页可以拆开红包；</string>
+    <string name="ru_zensongdqedtext_2">2、分享环宇到微信、微博、QQ等社交平台，分享成功后环宇将立即赠送“分享奖励红包”；详情请阅读"我"-"邀请好友"页；</string>
+    <string name="ru_zensongdqedtext_3">3、通过上述2方式分享环宇后，你的朋友点击你的分享消息注册、登陆环宇后，环宇将赠送“邀请奖励红包”；详情请阅读"我"-"邀请好友"页；</string>
+    <string name="ru_zensongdqedtext_4">4、上述红包需要你看到领取红包提示，或者手动进入"我"-"红包"-"我的红包",拆开红包后，红包金额将打入你的环宇账户余额。</string>
+    <string name="ru_zensongdqedtext_5">5、环宇赠送的红包都是有有效期的。只有在有效期内才能正常拆红包。否则红包将过期失效；具体有效期请查看红包详情。</string>
+
+</resources>

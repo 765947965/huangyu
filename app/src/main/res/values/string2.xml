@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="incall_notif_active">正在呼叫</string>
+    <string name="incall_notif_paused">Paused call ongoing</string>
+    <string name="not_ready_to_make_new_call">Not ready for a new call</string>
+    <string name="bad_target_uri">Bad contact : %s</string>
+    <string name="reset_sas_fmt">Reset verified %s</string>
+    <string name="verify_sas_fmt">Verify %s</string>
+    <string name="communication_encrypted">Encrypted</string>
+    <string name="waiting_for_startup">Starting up&#8230;</string>
+    <string name="couldnt_accept_call">An error occurred while accepting call</string>
+    <string name="error_adding_new_call">Error adding new call</string>
+    <string name="transfer_started">Transfer initiated</string>
+    <string name="transfer_dialog_title">Transfer call to</string>
+    <string name="transfer_to_new_call">New call</string>
+    <string name="resume_dialog_title">Resume call</string>
+    <string name="cannot_resume_paused_by_remote_call">Cannot resume call paused by remote</string>
+    <string name="conf_show_details_text">Show details</string>
+    <string name="skipable_error_service_not_ready">Warning: service is not ready</string>
+    <string name="close_button_text">Close</string>
+    <string name="status_conf_call">conf</string>
+    <string name="status_active_call">active</string>
+    <string name="state_paused">paused</string>
+    <string name="state_paused_by_remote">paused by remote</string>
+    <string name="state_streams_running"></string>
+    <string name="state_incoming_received">incoming</string>
+    <string name="state_outgoing_ringing">ringing</string>
+    <string name="state_outgoing_progress">calling</string>
+    <string name="mutemic_button_txt">Mute</string>
+    <string name="speaker_button_txt">Speaker</string>
+    <string name="bluetooth_button_txt">Bluetooth</string>
+    <string name="CancelButtonText">Cancel</string>
+    <string name="AddCallButtonText">Add call</string>
+    <string name="TransferCallButtonText">Transfer call</string>
+    <string name="conf_admin_choice_enter">Enter conference</string>
+    <string name="conf_admin_choice_leave">Momentarily leave conference</string>
+    <string name="conf_admin_choice_terminate">Terminate conference</string>
+    <string name="hangup">Hang up</string>
+    <string name="conf_simple_merge_bt_txt">Merge</string>
+    <string name="conf_simple_transfer_bt_txt">Transfer</string>
+    <string name="show_send_dtmfs_button">Dialpad</string>
+    <string name="conf_conference">Conference</string>
+    <string name="in_conf">You are part of it</string>
+    <string name="in_conf_leave">Go out</string>
+    <string name="out_conf">You are out of it</string>
+    <string name="out_conf_enter">Go in</string>
+    <string name="error_while_accepting_pending_call">Error while accepting pending call</string>
+    <string name="incoming_call_dialog_title">%s is calling you</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="at_least_a_protocol">At least one item is required</string>
+    <string name="first_launch_ok">Registration successful</string>
+    <string name="error">失败</string>
+    <string name="click_to_show_first_login_view">Start</string>
+    <string name="dialer_null_on_new_intent">Application not ready</string>
+    <string name="no_phone_numbers">No phone numbers found for %s</string>
+    <string name="filter_contacts">Filter contacts</string>
+    <string name="title_numbers_dialog">%s\'s phone numbers</string>
+    <string name="pref_autostart">Start at boot time</string>
+    <string name="pref_echo_cancellation">Echo cancellation</string>
+    <string name="pref_echo_canceller_calibration">Echo canceller calibration</string>
+    <string name="pref_echo_cancellation_summary">Removes the echo heard by other end</string>
+    <string name="setup_ec_calibration">Echo canceller calibration in progress</string>
+    <string name="pref_communication_expire_title">Communication timeout</string>
+    <string name="pref_incoming_expire_title">Incoming call timeout</string>
+    <string name="place_call_chooser">Place a call</string>
+
+    <bool name="override_domain_using_default_one">false</bool>
+
+    <string name="default_domain">sip.zjtytx.com:8060</string>
+
+    <bool name="forbid_self_call">false</bool>
+    <bool name="enable_call_notification">true</bool>
+    <bool name="disable_every_log">false</bool>
+    <bool name="enable_push_id">true</bool>
+
+    <string name="error_call_declined">Call declined</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_incompatible_media">Incompatible media parameters</string>
+    <string name="error_low_bandwidth">Your correspondent has low bandwidth, video can\'t be started</string>
+    <string name="error_network_unreachable">Network is unreachable</string>
+
+    <bool name="auto_answer_calls">false</bool>
+    <bool name="allow_ringing_while_early_media">true</bool>
+
+    <string name="pref_transport_tcp">TCP</string>
+    <string name="pref_transport_tls">TLS</string>
+    <string name="pref_transport_udp">UDP</string>
+    <string name="content_description_conference"></string>
+    <string name="content_description_hang_up"></string>
+    <string name="content_description_numpad"></string>
+    <string name="sync_account_type">org.linphone</string>
+    <string name="sync_account_name">linphone contacts</string>
+    <string name="sync_mimetype">vnd.android.cursor.item/org.linphone.profile</string>
+
+    <bool name="enable_linphone_friends">false</bool>
+    <bool name="use_linphone_tag">true</bool>
+
+    <string name="service_name">Aisin Service</string>
+
+    <bool name="use_linphonecore_ringing">false</bool>
+    <bool name="isTablet">false</bool>
+
+    <string name="addressbook_label">手机</string>
+    <string name="notification_title">环宇</string>
+    <string name="wait_dialog_text">Starting up</string>
+    <string name="notification_registered">Registered to %s </string>
+    <string name="notification_register_failure">Fails to register to %s</string>
+    <string name="tunnel_host"></string>
+    <string name="network_2G">2G网络下默认使用回拨,不可更改</string>
+    <string name="network2G">2G直拨开关(默认回拨)</string>
+    <string name="network_3G_4G">3G/4G网络下默认使用回拨</string>
+    <string name="network3G4G">3G/4G直拨开关</string>
+    <string name="network_wifi_des">WIFI网络下默认使用回拨</string>
+    <string name="network_wifi">WIFI国际直拨开关</string>
+    <string name="whate_huibo">什么是回拨？</string>
+    <string name="what_zhibo">什么是直拨？</string>
+    <string name="huibo">回拨需要接听拨打过来的来电后方可通话;如果您的手机接听收费(如国内外漫游),使用回拨时,运营商会收取接听电话的费用</string>
+    <string name="zhibo">直拨是指当您使用环宇打电话,环宇会通过网络传送您的语音给对方,因此会消耗流量,每分钟 通话时间大约会消耗430KB流量.建议您在手机网络下使用直拨时,注意您的流量使用情况！</string>
+    <string name="key_board_back">返回</string>
+    <string name="pref_tunnel_mode_key">pref_tunnel_mode_key</string>
+    <string name="tunnel_mode_entry_value_disabled">disabled</string>
+    <string name="default_tunnel_mode_entry_value">disabled</string>
+    <string name="tunnel_mode_entry_value_always">always</string>
+    <string name="tunnel_mode_entry_value_3G_only">3G_only</string>
+    <string name="tunnel_mode_entry_value_auto">auto</string>
+    <string name="unknown_incoming_call_name">Unknown</string>
+    <string name="pref_transport_use_standard_ports_key">pref_transport_use_standard_ports_key</string>
+    <string name="pref_transport_tcp_key">pref_transport_tcp_key</string>
+    <string name="pref_transport_udp_key">pref_transport_udp_key</string>
+    <string name="pref_transport_tls_key">pref_transport_tls_key</string>
+
+    <bool name="pref_codec_speex16_default">false</bool>
+    <bool name="pref_codec_speex8_default">false</bool>
+    <bool name="pref_codec_g729_default">true</bool>
+    <bool name="pref_sipinfo_dtmf_default">true</bool>
+
+    <string name="pref_codec_ilbc_key">pref_codec_ilbc_key</string>
+    <string name="pref_codec_gsm_key">pref_codec_gsm_key</string>
+    <string name="pref_codec_g722_key">pref_codec_g722_key</string>
+    <string name="pref_codec_g729_key">pref_codec_g729_key</string>
+    <string name="pref_codec_pcmu_key">pref_codec_pcmu_key</string>
+    <string name="pref_codec_pcma_key">pref_codec_pcma_key</string>
+    <string name="pref_codec_amr_key">pref_codec_amr_key</string>
+    <string name="pref_codec_amrwb_key">pref_codec_amrwb_key</string>
+    <string name="pref_codec_silk24_key">pref_codec_silk24_key</string>
+    <string name="pref_codec_silk16_key">pref_codec_silk16_key</string>
+    <string name="pref_codec_silk12_key">pref_codec_silk12_key</string>
+    <string name="pref_codec_silk8_key">pref_codec_silk8_key</string>
+    <string name="pref_media_encryption_key">pref_media_encryption_key</string>
+    <string name="pref_media_encryption_key_none">none</string>
+    <string name="pref_media_encryption_key_srtp">srtp</string>
+    <string name="pref_media_encryption_key_zrtp">zrtp</string>
+    <string name="pref_echo_cancellation_key">pref_echo_cancellation_key</string>
+    <string name="pref_echo_limiter_key">pref_echo_limiter_key</string>
+    <string name="wrong_settings">Wrong settings</string>
+    <string name="pref_wifi_only_key">pref_wifi_only_key</string>
+    <string name="pref_stun_server_key">pref_stun_server_key</string>
+    <string name="pref_domain_key">pref_domain_key</string>
+    <string name="pref_proxy_key">pref_proxy_key</string>
+    <string name="pref_default_account">pref_default_account</string>
+    <string name="pref_extra_accounts">pref_nb_accounts_extra</string>
+    <string name="pref_enable_outbound_proxy_key">Outbound proxy</string>
+    <string name="pref_escape_plus_key">pref_escape_plus_key</string>
+    <string name="pref_prefix_key">pref_prefix_key</string>
+    <string name="push_sender_id">622464153529</string>
+    <string name="push_reg_id_key">push_reg_id_key</string>
+    <string name="push_sender_id_key">push_sender_id_key</string>
+    <string name="notification_started">started</string>
+    <string name="title_activity_out_call">OutCallActivity</string>
+    <string name="title_activity_in_call">InCallActivity</string>
+    <string name="title_activity_keyboard">KeyboardActivity</string>
+
+</resources>
