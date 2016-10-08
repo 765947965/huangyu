@@ -98,6 +98,12 @@
             android:name="org.aisin.sipphone.RegistrationActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name="org.aisin.sipphone.setts.SetInviteriendsTips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.aisin.sipphone.setts.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="org.aisin.sipphone.AisinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"

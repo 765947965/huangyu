@@ -52,6 +52,8 @@ public class HttpUtils {
 	public static final String add_gift_thankyou = "http://mobile.zjtytx.com:8899/gift/add_gift_thankyou";
 	public static final String get_gift_info_v2 = "http://mobile.zjtytx.com:8899/gift/get_gift_info_v2";
 	public static final String get_gift_receive_info_v2 = "http://mobile.zjtytx.com:8899/gift/get_gift_receive_info_v2";
+	public static final String get_gift_info_v2_shareurl = "http://user.8hbao.com:8060/share_instructions.php";
+	public static final String getShareCode = "http://mobile.8hbao.com:8899/v2/get_my_invite_flag_v2";//获取专属邀请码
 
 	// 分享红包图标地址
 	public static final String redsharedImageurl = "http://img.zjtytx.com:8060/group1/M00/00/0B/d5OYZ1W2_J2AQ9q2AAAcD7bibuo522.png";

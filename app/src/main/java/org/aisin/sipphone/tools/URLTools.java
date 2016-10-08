@@ -377,6 +377,32 @@ public class URLTools {
 		return reg_geturl_strb.toString();
 	}
 
+	public static String GetHttpURL_4getShareSurl(Context context) {
+		String[] keys = { "sn", "agent_id", "account","sign",
+				"brand", "model", "product", "brandname" };
+		String sn = VerificationCode.getCode2();
+		PackageManager manager = context.getPackageManager();
+		PackageInfo info;
+		String version = null;
+		try {
+			info = manager.getPackageInfo(context.getPackageName(), 0);
+			version = info.versionName;
+		} catch (NameNotFoundException e) {
+		}
+		String[] values = { sn, UserInfo_db.getagent_id(context), UserInfo_db.getUserInfo(context).getPhone(),
+				 MD5.toMD5(sn + UserInfo_db.getUserInfo(context).getPhone() + Common.SIGN_KEY),
+				PhoneInfo.brand, PhoneInfo.phoneModel, Constants.BrandName,
+				Constants.BrandName };
+		StringBuilder reg_geturl_strb = new StringBuilder();
+		reg_geturl_strb.append(HttpUtils.getShareCode + "?");
+		int i = 0;
+		for (String str : keys) {
+			reg_geturl_strb.append(str + "=" + values[i] + "&");
+			i += 1;
+		}
+		return reg_geturl_strb.toString();
+	}
+
 	// 获取更改密码的URL
 	public static String GetHttpURL_4ChangePassword_V2(Context context,
 			String oldpassowrd, String newPassowrd, String phone) {
@@ -766,6 +792,22 @@ public class URLTools {
 				MD5.toMD5(userinfo.getUid().trim() + Common.SIGN_KEY), gift_id };
 		StringBuilder reg_service_page = new StringBuilder();
 		reg_service_page.append(HttpUtils.get_gift_info_v2 + "?");
+		int i = 0;
+		for (String str : keys) {
+			reg_service_page.append(str + "=" + values[i] + "&");
+			i += 1;
+		}
+		return reg_service_page.toString();
+	}
+
+	// 获取分享说明
+	public static String GetHttpURL_4Shareurl(Context context) {
+		String[] keys = new String[] { "uid", "sign"};
+		UserInfo userinfo = UserInfo_db.getUserInfo(context);
+		String[] values = new String[] { userinfo.getUid(),
+				MD5.toMD5(userinfo.getUid().trim() + Common.SIGN_KEY)};
+		StringBuilder reg_service_page = new StringBuilder();
+		reg_service_page.append(HttpUtils.get_gift_info_v2_shareurl + "?");
 		int i = 0;
 		for (String str : keys) {
 			reg_service_page.append(str + "=" + values[i] + "&");

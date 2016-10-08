@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="listitem_pressed">#D3D3D3</color>
-    <color name="mycolor_pressed">#1160FD</color>
-    <color name="actionbtb_pressed">#e8e8e8</color>
-    <color name="mycolor_pressed_num">#1160FD</color>
-    <color name="textmrcolor">#b4b4b4</color>
-    <color name="textmrcolor2">#808080</color>
-    <color name="mycolor_dispressed_num">#FFFFFF</color>
-    <color name="mycolor_dial_tm">#00000000</color>
-    <color name="traditiondialbanck">#066B91</color>
     <color name="colors1_0">#e84c3d</color>
     <color name="colors1_1">#5dade2</color>
     <color name="colors1_2">#2a80b9</color>
@@ -58,5 +48,57 @@
     <color name="colors6_5">#27ae61</color>
     <color name="colors6_6">#336699</color>
     <color name="colors6_7">#336699</color>
+    <color name="listitem_pressed">#D3D3D3</color>
+    <color name="mycolor_pressed">#1160FD</color>
+    <color name="actionbtb_pressed">#e8e8e8</color>
+    <color name="mycolor_pressed_num">#1160FD</color>
+    <color name="textmrcolor">#b4b4b4</color>
+    <color name="textmrcolor2">#808080</color>
+    <color name="mycolor_dispressed_num">#FFFFFF</color>
+    <color name="mycolor_dial_tm">#00000000</color>
+    <color name="traditiondialbanck">#066B91</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_black">#8f969e</color>
+    <color name="gray_ab">#ababab</color>
+    <color name="app_background">#fbfbf9</color>
+    <color name="title_background">#fefefe</color>
+    <color name="dividing_line">#e0e0e0</color>
+    <color name="text_spinner_list_item">#f7f6f2</color>
+    <color name="refurush_color">#FF6666</color>
+    <color name="refurush_gray">#cccccc</color>
+    <color name="refurush_color_dark">#ff5c5c</color>
+    <!-- 黄色边框默认 -->
+    <color name="btn_yellow_border_default">#00000000</color>
 
+    <!-- 正文标题 -->
+    <color name="text_title">#212121</color>
+    <!-- 正文内容 -->
+    <color name="text_content">#212121</color>
+    <!-- 文本框里提示文字 -->
+    <color name="text_hint">#d1d1d1</color>
+    <!-- 文本框里输入文字 -->
+    <color name="text_input">#212121</color>
+    <!-- 备注提示文字 -->
+    <color name="remark_tips">#ababab</color>
+    <!-- 时间 -->
+    <color name="time">#ababab</color>
+    <!-- 深黄色 -->
+    <color name="btn_text_yellow">#FF6666</color>
+    <!-- 描述 -->
+    <color name="text_desc">#434343</color>
+    <!-- 标题右边文字颜色 -->
+    <color name="text_titile_right">#4d4d4d</color>
+
+    <!-- 说明文字颜色 -->
+    <color name="text_instructions">#808080</color>
+
+    <!-- 深颜色分割线 -->
+    <color name="dividing_line_dark">#cccccc</color>
+    <!-- 浅色分割线 -->
+    <color name="dividing_line_light">#e6e6e6</color>
+    <!-- 标题分割线 -->
+    <color name="dividing_line_title">#c2c2c2</color>
 </resources>

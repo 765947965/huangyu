@@ -304,8 +304,10 @@ public class Setts_Fragment extends Fragment implements OnClickListener {
 					org.aisin.sipphone.setts.FeedbackActivity.class);
 			break;
 		case R.id.setts_inviteriends_relayout:
+//			intent = new Intent(AisinActivity.context,
+//					org.aisin.sipphone.setts.SetInviteriends.class);
 			intent = new Intent(AisinActivity.context,
-					org.aisin.sipphone.setts.SetInviteriends.class);
+					org.aisin.sipphone.setts.SetInviteriendsTips.class);
 			break;
 		case R.id.setts_aboutaisin_relayout:
 			intent = new Intent(AisinActivity.context,
