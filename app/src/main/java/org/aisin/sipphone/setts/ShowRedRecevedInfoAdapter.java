@@ -178,13 +178,14 @@ public class ShowRedRecevedInfoAdapter extends BaseAdapter {
 		}
 		return convertView;
 	}
+	class ViewHolder {
+		TextView name;
+		TextView time;
+		ImageView reddetails_from_iamge;
+		TextView gxy;
+		TextView money;
+		TextView sq;
+	}
 }
 
-class ViewHolder {
-	TextView name;
-	TextView time;
-	ImageView reddetails_from_iamge;
-	TextView gxy;
-	TextView money;
-	TextView sq;
-}
+

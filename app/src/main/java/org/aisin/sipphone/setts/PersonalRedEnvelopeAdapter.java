@@ -179,12 +179,12 @@ public class PersonalRedEnvelopeAdapter extends BaseAdapter {
 		}
 		return convertView;
 	}
+	class ViewHolder_personredeven {
+		ImageView item_radiobutton;
+		ImageView pre_tx;
+		TextView nametext;
+		TextView phonetext;
+		TextView item_szm;
+	}
 }
 
-class ViewHolder_personredeven {
-	ImageView item_radiobutton;
-	ImageView pre_tx;
-	TextView nametext;
-	TextView phonetext;
-	TextView item_szm;
-}

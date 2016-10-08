@@ -236,10 +236,11 @@ public class SetKeyboardMusicAdapter extends BaseAdapter {
 		});
 		return convertView;
 	}
+	class ViewHolderMusic {
+		TextView musicname;
+		TextView checked;
+		ImageView playmusic;
+	}
 }
 
-class ViewHolderMusic {
-	TextView musicname;
-	TextView checked;
-	ImageView playmusic;
-}
+

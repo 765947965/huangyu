@@ -76,8 +76,9 @@ public class HorizontalListViewAdapter extends BaseAdapter {
 		return convertView;
 	}
 
+	class ViewHolder_hrtlva {
+		TextView itemtext;
+	}
 }
 
-class ViewHolder_hrtlva {
-	TextView itemtext;
-}
+

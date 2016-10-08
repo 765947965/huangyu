@@ -178,12 +178,12 @@ public class SetKeybackAdapter extends BaseAdapter {
 
 		return convertView;
 	}
-
+	class ViewHolder_setkey {
+		ImageView bcimage_0;
+		ImageView bcimagecheck_0;
+		ImageView bcimage_1;
+		ImageView bcimagecheck_1;
+	}
 }
 
-class ViewHolder_setkey {
-	ImageView bcimage_0;
-	ImageView bcimagecheck_0;
-	ImageView bcimage_1;
-	ImageView bcimagecheck_1;
-}
+
