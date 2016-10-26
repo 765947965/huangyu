@@ -68,7 +68,7 @@
 
     <bool name="override_domain_using_default_one">false</bool>
 
-    <string name="default_domain">sip.zjtytx.com:8060</string>
+    <string name="default_domain">sip.zjtytx.com:10090</string>
 
     <bool name="forbid_self_call">false</bool>
     <bool name="enable_call_notification">true</bool>
