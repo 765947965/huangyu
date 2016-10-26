@@ -5,7 +5,7 @@ public class Constants {
 	public static final String BrandName = "aixin";
 	public static final String servicePagefileName = "/servicepagefile.txt";
 	public static final String servicePagedirName = "/servicePageImg";
-	public static final String DOMAIN = "sip.zjtytx.com:8060:10090";
+	public static final String DOMAIN = "sip.zjtytx.com:10090";
 	public static final String KEYBACK = "backgrounds2";// 键盘背景图片存放文件夹名称
 	public static final String KEYBACK_WRIGHT = "0000000000001.png";// 白色键盘背景图片
 	public static final String KEYBACK_MR = "0000000002.png";// 默认键盘背景图片
